@@ -1,55 +1,248 @@
 <!DOCTYPE html>
-<!-- Sam Carter, CPSC 332, HW1, Last modified: 9/11/25 -->
+<!-- Sam Carter, CPSC 332, HW1, Last modified: 9/21/25 -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="icon" href="./photos/sam.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <a href="index.html">Home</a>
-    <a href="education.html">Education</a>
-    <a href="career.html">Career</a>
-    <a href="interests.html">Interests</a>
+    <nav>
+      <div class="navbar-logo">
+        <img src="./photos/logo.png" alt="Logo" />
+      </div>
+      <div class="navbar-buttons">
+        <a href="#introduction">Introduction</a>
+        <a href="#career">Career</a>
+        <a href="#education">Education</a>
+        <a href="#interests">Interests</a>
+      </div>
+    </nav>
 
-    <h1>Sam Carters Personal Website</h1>
-    <section>
-      <h2>About Me</h2>
-      <a href="#thanks">Visit bottom of website</a>
-      <br />
-      <img src="./photos/sam.png" alt="Picture of Sam" width="200" />
-      <p>
-        I have lived in the Pacific Northwest my whole life, and have
-        <!--Summary paragraph-->
-        pretty much have always known I wanted to be a Zag, so here we are. My
-        love for computer science first began back in high school when I took my
-        first one-semester CS class called "Intro to Game Development". My first
-        ever project was actually a tank shooter game that I worked on with some
-        friends. I instantly became captivated by the world of CS, falling in
-        love with the idea of creating applications for others to use. Welcome
-        to my personal website!
-      </p>
-      <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C++</li>
-        <li>HTML/CSS/JS</li>
-        <li>SQL</li>
-        <li>Bash</li>
-        <li>React</li>
-        <li>Nodejs</li>
-        <li>Apache</li>
-        <li>Git</li>
-        <li>Docker</li>
-        <li>AWS</li>
-      </ul>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </section>
-    <section>
-      <h2 id="thanks">Bottom of Page</h2>
-      <p>Thank you for viewing my website</p>
-    </section>
+    <div class="content-container">
+      <div id="introduction" class="introduction">
+        <h2>Sam Carter</h2>
+        <h2>Computer Science Major</h2>
+        <img src="./photos/sam.png" alt="Picture of Sam" width="200" />
+        <p>
+          <!--Summary paragraph-->
+          I have lived in the Pacific Northwest my whole life, and have pretty
+          much have always known I wanted to be a Zag, so here we are. My love
+          for computer science first began back in high school when I took my
+          first one-semester CS class called "Intro to Game Development". My
+          first ever project was actually a tank shooter game that I worked on
+          with some friends. I instantly became captivated by the world of CS,
+          falling in love with the idea of creating applications for others to
+          use. Welcome to my personal website!
+        </p>
+      </div>
+      <div class="main-content">
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>HTML/CSS/JS</li>
+            <li>SQL</li>
+            <li>Bash</li>
+            <li>React</li>
+            <li>Nodejs</li>
+            <li>Apache</li>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+        <div id="career" class="career">
+          <h2>Work Experience</h2>
+          <table>
+            <caption>
+              <strong>Work Experience and Leadership Roles</strong>
+            </caption>
+            <tr>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Description</th>
+              <th>Dates</th>
+            </tr>
+            <tr>
+              <td>Spokane Canopy Credit Union</td>
+              <td>Software Developer Internship</td>
+              <td>
+                Built a lead-tracking web application with React, Node.js, and
+                IIS, allowing Member Advocates to filter members by criteria
+                such as expiring accounts and balances, integrated with a SQL
+                database for real-time read/write access. Developed interactive
+                Python scripts using scikit-learn to perform custom data
+                analysis on CSV files, allowing users to select columns and run
+                models including decision trees, random forests, linear
+                regression, and logistic regression.
+              </td>
+              <td>Jun 2025 - Current</td>
+            </tr>
+            <tr>
+              <td>Groq</td>
+              <td>Software Developer Internship</td>
+              <td>
+                Developed a monitoring website using Apache, Python and Bash
+                scripts to collect and display power consumption data from over
+                170 racks and 350 PDUs, with graphical displays for individual
+                racks, cages, datacenter locations, and total racks. Utilized
+                PostgreSQL database in a Docker container to store data, with a
+                PostgreSQL client in another Docker container for data writing,
+                scheduled with a cron job every 5 minutes. Employed Apache, htmx
+                and Bash scripts for power cycling nodes, enhancing operational
+                efficiency across 3 datacenters. Automated the process of adding
+                new machines and racks with Bash scripts, facilitating future
+                scalability.
+              </td>
+              <td>May 2024 - Aug 2024</td>
+            </tr>
+            <tr>
+              <td>Groq</td>
+              <td>Data Center Technician</td>
+              <td>
+                Installed 5 racks of datacenter equipment each with 9 GroqNode
+                Servers using rotational topology, as well as configuring 2
+                switches for each rack with IP Routing and default gateways.
+                Developed a Bash script to automate the process of measuring the
+                maximum power consumption for 90 servers across our racks and
+                another to concurrently control 40 PDUs for efficient power
+                management.
+              </td>
+              <td>July 2023 - Dec 2023</td>
+            </tr>
+            <tr>
+              <td>Gonzaga University</td>
+              <td>Teachers Assistant</td>
+              <td>
+                Reviewed and graded assignments for 51 students in two Computer
+                Science I courses, analyzing 50-500 lines of code per
+                submission. Assisted in the spring semester for two Computer
+                Science UI/UX classes. Provided personalized feedback to each
+                student to help them understand their mistakes and enhance their
+                coding skills. Additionally, held regular office hours to
+                provide further support and address student questions.
+              </td>
+              <td>Aug 2024 - Present</td>
+            </tr>
+            <tr>
+              <td>Gonzaga University</td>
+              <td>ACM President</td>
+              <td>
+                Coordinated a multi-school Hackathon with local sponsors and
+                held team meetings where people meet to code projects and learn
+                new tools such as utilizing the school's server, GitHub Pages,
+                and creating portfolio site projects.
+              </td>
+              <td>April 2023 - Feb 2025</td>
+            </tr>
+          </table>
+        </div>
+        <div id="education" class="education">
+          <h2>Education</h2>
+          <table>
+            <caption>
+              <strong>Academic Background</strong>
+            </caption>
+            <tr>
+              <th>School</th>
+              <th>Degree</th>
+              <th>Dates</th>
+              <th>GPA</th>
+            </tr>
+            <tr>
+              <td>Gonzaga University</td>
+              <td>Bachelor of Science in Computer Science</td>
+              <td>Aug 2022 - May 2026</td>
+              <td>3.85</td>
+            </tr>
+            <tr>
+              <td>Central Valley High School</td>
+              <td>High School Diploma</td>
+              <td>Aug 2018 - May 2022</td>
+              <td>3.98</td>
+            </tr>
+          </table>
+          <br />
+          <table>
+            <caption>
+              <strong>Qualifications</strong>
+            </caption>
+            <tr>
+              <th>Qualification</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>CompTIA Security+ Certification</td>
+              <td>April 2024</td>
+            </tr>
+          </table>
+        </div>
+        <div id="interests" class="interests">
+          <h2>Interests and Hobbies</h2>
+          <ol>
+            <li>
+              <a
+                href="https://www.gonzaga.edu/student-life/health-well-being/rudolf-fitness-center"
+                target="_blank"
+              >
+                <img
+                  src="./photos/weightlifting.webp"
+                  alt="Weightlifting image"
+                  width="100"
+                /> </a
+              >Working Out
+            </li>
+            <li>
+              <a
+                href="https://www.spokanecounty.gov/1234/MeadowWood"
+                target="_blank"
+              >
+                <img
+                  src="./photos/golfing.jpeg"
+                  alt="Golfing image"
+                  width="100"
+                /> </a
+              >Golfing
+            </li>
+            <li>
+              <a href="https://www.allrecipes.com/" target="_blank">
+                <img
+                  src="./photos/baking.jpeg"
+                  alt="Cooking image"
+                  width="100"
+                /> </a
+              >Cooking
+            </li>
+            <li>
+              <a href="https://store.epicgames.com/en-US" target="_blank">
+                <img
+                  src="./photos/videogames.jpeg"
+                  alt="Video Games image"
+                  width="100"
+                /> </a
+              >Video Games
+            </li>
+            <li>
+              <a
+                href="https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science/study-cs-abroad/cs-in-berlin-blog"
+                target="_blank"
+              >
+                <img
+                  src="./photos/travel.jpeg"
+                  alt="Travel image"
+                  width="100"
+                /> </a
+              >Traveling
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
