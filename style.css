@@ -99,6 +99,11 @@ nav {
   width: 30%;
 }
 
+.interests img {
+  border: black solid 1px;
+  border-radius: 5%;
+}
+
 table {
   width: 100%;
   background-color: #ffffff;
