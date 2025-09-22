@@ -55,6 +55,12 @@ nav {
 .introduction {
   background-color: grey;
   flex: 0 1 33%;
+  padding: 1%;
+}
+
+.introduction img {
+  border: solid black 1px;
+  border-radius: 5%;
 }
 
 .introduction p {
